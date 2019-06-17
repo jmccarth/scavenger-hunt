@@ -23,7 +23,7 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(location){
       var from = turf.point([location.coords.longitude,location.coords.latitude]);
-      var to = turf.point([-80,43.5]);
+      var to = turf.point([-80.543253,43.471119]);
       var options = {units: 'kilometers'};
       var distcalc = turf.distance(from,to,options);
       var bearing = turf.bearing(from,to);
